@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript | Assignment </title>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<div class="center">
+<div id="msg" style="background-color: red; color: white";></div>
+	<hr>
+	<form id="my-form" onsubmit="formSubmit(); return false;">
+        
+          <label>Firstname</label>
+          <input type="text" class="" id="firstname" name="firstname" placeholder="Enter firstname">
+          <small></small> 
+         <br>
+          <label>Lastname</label>
+          <input type="text" class="" id="lastname" name="lastname" placeholder="Enter lastname">
+          <small></small> 
+        <br>
+          <label>Occupation</label>
+          <select name="occupation" id="ocp">
+			<option value='none'>-- Choose Your Occupation --</option>
+  			<option value="actor">Actor</option>
+  			<option value="teacher">Teacher</option>
+  			<option value="engineer">Engineer</option>
+			<option value="other">Other</option> 
+	</select>
+        <br>
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" id="password" 
+        onkeyup='check();' name="password" placeholder="Password">
+	<span id='lvlmsg'></span>
+        <br>
+        
+        <label for="exampleInputPassword1">Confirm Password</label>
+        <input type="password" id="confirm_password" 
+        onkeyup='check();' name="confirm_password" placeholder="Password">
+        <span id='message'></span>
+	<br>        
+  	<input type="checkbox" id="remember" name="remember" value="checked">
+  	<label for="remember">Remember me</label><br>
+	<hr>
+        <button id="submit" >Submit</button>
+    
+</form>
+</div>
+
+<style>
+.center {
+  margin: 10%;
+}
+input, select, button{
+margin: 1%;
+}
+</style>
+</body>
+</html>
